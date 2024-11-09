@@ -1,0 +1,47 @@
+/* Personalizações rápidas */
+body {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 49px;
+}
+
+header {
+    background-color: #004B7C;
+    /* Azul escuro */
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.356);
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 70vh;
+    /* Ajustando para 50% da altura da tela */
+    object-fit: cover;
+}
+
+.cta-button {
+    background-color: #00B8D4;
+    /* Verde Limão */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.card{
+    transition: 0.6s ease-in-out;
+}
+.card:hover{
+    box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.274);
+    transform: translateY(-10px);
+}
