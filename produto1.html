@@ -6,69 +6,45 @@
     <title>Produto 1 - e</>script</title>
     <!-- Link do Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <style>
-        /* Personalizações rápidas */
-        body {
-            font-family: 'Roboto', sans-serif;
-        }
-        header {
-            background-color: #004B7C; /* Azul escuro */
-            color: white;
-            padding: 20px 0;
-        }
-        footer {
-            background-color: #f8f9fa;
-            padding: 20px 0;
-            text-align: center;
-        }
-        .product-image {
-            max-width: 100%;
-            height: auto;
-        }
-        .cta-button {
-            background-color: #00B8D4; /* Verde Limão */
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Cabeçalho -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light container">
+    <!-- Navegação -->
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg  navbar-light container">
             <a class="navbar-brand" href="index.html">
-                <img src="img/logo.png" alt="Logo e</>script" style="width: 100px;">
+                <img class="logo" src="img/logo.png" alt="Logo E&lt;/&gt;script">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Início</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#equipe">Equipe</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Equipe</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Contato</a></li>
                 </ul>
             </div>
         </nav>
     </header>
-
     <!-- Seção de Produto -->
-    <section id="produto" class="container py-5">
-        <h2 class="text-center mb-4">Produto 1: Solução Digital Inovadora</h2>
+    <section id="produto" class="container pt-5 py-5">
+        <h2 class="text-center mb-4"> Solução Digital Inovadora</h2>
         <div class="row">
             <!-- Imagem do Produto -->
             <div class="col-md-6">
-                <img src="https://via.placeholder.com/800x600" alt="Produto 1" class="product-image">
+                <img src="img/imagem.webp" alt="Produto 1" class="product-image">
             </div>
             <!-- Descrição do Produto -->
             <div class="col-md-6">
                 <h3>Descrição Completa</h3>
-                <p>O Produto 1 é uma solução digital inovadora, desenvolvida para otimizar processos e proporcionar um diferencial competitivo para sua empresa. Com uma interface amigável e recursos poderosos, o Produto 1 oferece:</p>
+                <p>Oferecemos uma solução digital inovadora, desenvolvida para otimizar processos e proporcionar um diferencial competitivo para sua empresa. Com uma interface amigável e recursos poderosos:</p>
                 <ul>
+                    <li>Criação de sites</li>
                     <li>Automação de processos</li>
                     <li>Integração com outras plataformas</li>
                     <li>Suporte 24/7</li>
@@ -78,37 +54,6 @@
 
                 <!-- Botão de Ação -->
                 <a href="#" class="btn cta-button">Adquirir Agora</a>
-            </div>
-        </div>
-
-        <hr>
-
-        <!-- Seção de Testemunhos -->
-        <div class="row py-5">
-            <h3 class="text-center mb-4">O que nossos clientes dizem</h3>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <p class="card-text">"O Produto 1 transformou completamente nossos processos internos. Agora somos muito mais rápidos e eficientes!"</p>
-                        <footer class="blockquote-footer">João Silva, CEO da Empresa X</footer>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <p class="card-text">"Com o Produto 1, conseguimos automatizar tarefas que antes eram manuais. A economia de tempo foi impressionante!"</p>
-                        <footer class="blockquote-footer">Maria Oliveira, Diretora de TI da Empresa Y</footer>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <p class="card-text">"A integração do Produto 1 com outras plataformas foi um grande diferencial para nossa operação."</p>
-                        <footer class="blockquote-footer">Carlos Souza, Gerente de Operações da Empresa Z</footer>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -133,13 +78,84 @@
             <button type="submit" class="btn cta-button">Enviar Mensagem</button>
         </form>
     </section>
-
-    <!-- Rodapé -->
-    <footer>
+</div>
+    <!--Footer inicio-->
+    <footer class="text-center margin text-white" style="background-color: #515253">
+        <div class="container">
+    
+            <section class="mt-0">
+    
+                <div class="row text-center d-flex justify-content-center pt-5">
+    
+                    <div class="col-md-3">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="#sobre" class="text-white">Sobre</a>
+                        </h6>
+                    </div>
+    
+                    <div class="col-md-3">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="#servicos" class="text-white">Serviços</a>
+                        </h6>
+                    </div>
+    
+                    <div class="col-md-3">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="#equipe" class="text-white">Proximo Evento</a>
+                        </h6>
+                    </div>
+    
+                    <div class="col-md-3">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="#contato" class="text-white">Contato</a>
+                        </h6>
+                    </div>
+                </div>
+            </section>
+            <hr class="my-5" />
+            <div class="container my-5">
+                <h2 class="text-center mb-4">Contato</h2>
+    
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <h5>Informações de Contato</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <strong>Email:</strong> escript@gmail.com
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <strong>Telefone:</strong> (44) 9999-9999
+                            </li>
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <strong>Localização:</strong> Av. Paraná 7327, Zona III, CEP 87508290, Umuarama - PR
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="col-md-6 mb-4">
+                        <h5>Redes Sociais</h5>
+                        <div class="">
+                            <a href="https://api.whatsapp.com/send?phone=5544997060488" class="btn btn-success me-2"
+                                target="_blank">
+                                <i class="fab fa-whatsapp"></i> Inscreva-se pelo WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <p>&copy; 2024 E&lt;/&gt;script - Todos os direitos reservados.</p>
-    </footer>
+      </footer>
+      <!--Footer Fim-->
 
     <!-- Scripts do Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-+vjiRbHkRjjW+7F3LgS9yWwrXsfgvfjq5hWUwOtnmlUQdQ7Yg5ZB8LQ/pPxqlJkl" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS e Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
 </body>
 </html>
